@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get help with Somali Business Alliance (SBA). Frequently asked questions about electronics, solar, IT hardware, and technology trade. Navigation guide and support resources.">
+    <title>Help &amp; FAQ | SBA - Somali Business Alliance</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Poppins:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="SBA Logo" width="48" height="48">
+                <span>SBA</span>
+            </a>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Marketplace</a></li>
+                <li><a href="connect.html">Connect</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="help.html" class="active">Help</a></li>
+            </ul>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation">☰</button>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section page-header">
+        <div class="container">
+            <div class="services-header">
+                <p class="eyebrow">Help</p>
+                <h2>Help Center</h2>
+                <p class="services-intro">Find answers to common questions and learn how to use SBA effectively.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation Guide -->
+    <section class="section">
+        <div class="container">
+            <h2>Website Navigation Guide</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-content">
+                        <h3>🏠 Home</h3>
+                        <p>Overview of SBA, quick stats, featured opportunities, and how the platform works.</p>
+                        <a href="index.html">Go to Home →</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>📦 Services</h3>
+                        <p>Explore all services we offer, membership tiers, and regional reach with map.</p>
+                        <a href="services.html">View Services →</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>🛒 Marketplace</h3>
+                        <p>Browse the visual gallery and structured data table of active trade listings.</p>
+                        <a href="gallery.html">Browse Marketplace →</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>🤝 Connect</h3>
+                        <p>Register your business or submit an inquiry to get matched with partners.</p>
+                        <a href="connect.html">Start Connecting →</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>👥 About</h3>
+                        <p>Our mission, values, story, and the student team behind this project.</p>
+                        <a href="about.html">Learn About Us →</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>❓ Help</h3>
+                        <p>Navigation guide and answers to frequently asked questions.</p>
+                        <a href="help.html">You are here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" style="background-color: #F8F9FA;">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <p style="margin-bottom: 1.75rem;">Click a question to reveal the answer.</p>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    What is the Somali Business Alliance (SBA)?
+                </div>
+                <div class="faq-answer">
+                    <p>SBA is a B2B platform that connects Somali tech companies, electronics traders, and businesses with local and international buyers. We verify members and facilitate trade opportunities across solar energy, smartphones, laptops, telecom equipment, and electronics.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Is it free to join SBA?
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! The Basic membership is completely free. You can create a profile, browse listings, and send up to 3 connection requests per month at no cost. Paid plans unlock unlimited access and premium features.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    How do I connect with a buyer or supplier?
+                </div>
+                <div class="faq-answer">
+                    <p>Go to the <a href="connect.html">Connect page</a>, fill out the inquiry form, and select your interests. Alternatively, browse listings on the Marketplace and click “Contact” on any product. Our team will facilitate introductions.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Are all listings verified?
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. Every supplier and buyer on the SBA platform is verified through document checks and, in many cases, physical verification. We maintain high standards to ensure trustworthy trade partners.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    What products are commonly traded on SBA?
+                </div>
+                <div class="faq-answer">
+                    <p>Our most active categories now include solar panels &amp; inverters, smartphones and accessories, laptops &amp; IT hardware, telecom equipment, networking gear, security systems, and consumer electronics.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    How long does it take to get matched?
+                </div>
+                <div class="faq-answer">
+                    <p>Most inquiries receive initial matches within 24–48 hours. Premium members often receive faster responses and priority matching.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Can international buyers join?
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely. SBA is designed to connect international buyers with Somali producers. Many of our most active members are from the UAE, Saudi Arabia, Kenya, Turkey, and Europe.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    How do I update or remove my listing?
+                </div>
+                <div class="faq-answer">
+                    <p>Log in to your account (after registration) and visit the Dashboard (coming soon). For now, simply email us at <a href="mailto:support@sballiance.so">support@sballiance.so</a> with your request.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Support -->
+    <section class="section">
+        <div class="container" style="max-width: 680px; text-align: center;">
+            <h2>Still need help?</h2>
+            <p style="margin-bottom: 1.5rem;">Our support team is available Monday–Friday, 8:00 AM – 6:00 PM (East Africa Time).</p>
+            
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="mailto:support@sballiance.so" class="btn btn-primary">Email Support</a>
+                <a href="tel:+252615123456" class="btn btn-outline">Call +252 61 512 3456</a>
+                <a href="connect.html" class="btn btn-accent">Submit a Request</a>
+            </div>
+            
+            <p style="margin-top: 2rem; font-size: 0.95rem; color: var(--text-light);">
+                For urgent matters, please use the Connect form and select “Export Facilitation”.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo" style="margin-bottom: 1rem; color: white;">
+                        <img src="images/logo.png" alt="SBA Logo" width="40" height="40" style="filter: brightness(1) invert(0);">
+                        <span style="color: white;">SBA</span>
+                    </div>
+                    <p style="font-size: 0.95rem; max-width: 260px;">Empowering Somali trade since 2023. A trusted bridge between local producers and global markets.</p>
+                </div>
+                
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="gallery.html">Marketplace</a></li>
+                        <li><a href="connect.html">Join the Alliance</a></li>
+                        <li><a href="about.html">Our Story</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4>Contact Us</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:info@sballiance.so">info@sballiance.so</a></li>
+                        <li><a href="tel:+252615123456">+252 61 512 3456</a></li>
+                        <li>Mogadishu, Somalia</li>
+                        <li>Berbera Trade Port Office</li>
+                    </ul>
+                    
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2026 Somali Business Alliance. All rights reserved. | A project by Jamhuriya University of Science &amp; Technology
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleFAQ(element) {
+            const item = element.parentElement;
+            item.classList.toggle('active');
+            
+            // Close other open FAQs
+            document.querySelectorAll('.faq-item').forEach(faq => {
+                if (faq !== item) {
+                    faq.classList.remove('active');
+                }
+            });
+        }
+        
+        // Mobile nav
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileBtn.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+        });
+        
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileBtn.textContent = '☰';
+            });
+        });
+    </script>
+</body>
+</html>

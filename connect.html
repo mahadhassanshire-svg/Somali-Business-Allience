@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join Somali Business Alliance (SBA) or send a connection request to verified Somali electronics, solar, and technology traders and buyers.">
+    <title>Connect | SBA - Somali Business Alliance</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Poppins:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="SBA Logo" width="48" height="48">
+                <span>SBA</span>
+            </a>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Marketplace</a></li>
+                <li><a href="connect.html" class="active">Connect</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation">☰</button>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section page-header">
+        <div class="container">
+            <div class="services-header">
+                <p class="eyebrow">Connect</p>
+                <h2>Connect with Trusted Partners</h2>
+                <p class="services-intro">Register your business, post requirements, or send inquiries to verified Somali suppliers and buyers.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="form-container">
+                <h2 style="text-align: center; margin-bottom: 0.5rem;">Join SBA or Submit an Inquiry</h2>
+                <p style="text-align: center; color: var(--text-light); margin-bottom: 2rem;">Fill out the form below. Our team will review and connect you within 48 hours.</p>
+                
+                <form id="connectForm" action="#" method="POST">
+                    
+                    <!-- Business Type -->
+                    <fieldset>
+                        <legend>I am a:</legend>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="userType" value="supplier" required> Supplier / Producer
+                            </label>
+                            <label>
+                                <input type="radio" name="userType" value="buyer"> International Buyer
+                            </label>
+                            <label>
+                                <input type="radio" name="userType" value="trader"> Local Trader
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-grid">
+                        <!-- Full Name -->
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="e.g. Amina Hassan" required minlength="3">
+                        </div>
+                        
+                        <!-- Business Name -->
+                        <div class="form-group">
+                            <label for="businessName">Business / Company Name *</label>
+                            <input type="text" id="businessName" name="businessName" placeholder="e.g. HornTech Solutions" required>
+                        </div>
+                        
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="email">Business Email *</label>
+                            <input type="email" id="email" name="email" placeholder="you@business.com" required>
+                        </div>
+                        
+                        <!-- Phone -->
+                        <div class="form-group">
+                            <label for="phone">Phone Number (with country code) *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+252 61 234 5678" required>
+                        </div>
+                        
+                        <!-- Location -->
+                        <div class="form-group">
+                            <label for="location">Primary Location / Region *</label>
+                            <select id="location" name="location" required>
+                                <option value="">Select region...</option>
+                                <option value="Mogadishu">Mogadishu / Banadir</option>
+                                <option value="Berbera">Berbera / Somaliland</option>
+                                <option value="Hargeisa">Hargeisa / Somaliland</option>
+                                <option value="Puntland">Puntland</option>
+                                <option value="Kismayo">Kismayo / Jubaland</option>
+                                <option value="Bay">Bay Region</option>
+                                <option value="Lower Shabelle">Lower Shabelle</option>
+                                <option value="Other">Other / Diaspora</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Industry -->
+                        <div class="form-group">
+                            <label for="industry">Primary Industry / Sector *</label>
+                            <select id="industry" name="industry" required>
+                                <option value="">Select industry...</option>
+                        <option value="SolarEnergy">Solar &amp; Renewable Energy</option>
+                        <option value="MobileElectronics">Mobile Phones &amp; Accessories</option>
+                        <option value="ComputersIT">Computers &amp; IT Hardware</option>
+                        <option value="TelecomNetworking">Telecom &amp; Networking</option>
+                        <option value="SecurityElectronics">Security &amp; Electronics</option>
+                        <option value="Manufacturing">Electronics Manufacturing</option>
+                        <option value="Other">Other Tech</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <!-- Products Offered / Seeking -->
+                    <div class="form-group full">
+                        <label for="products">Products / Services Offered or Seeking *</label>
+                        <textarea id="products" name="products" placeholder="List your main products (e.g. Solar Panels, Smartphones, Laptops) or what you are looking to buy" rows="3" required minlength="15"></textarea>
+                    </div>
+                    
+                    <div class="form-grid">
+                        <!-- Quantity / Volume -->
+                        <div class="form-group">
+                            <label for="volume">Expected Monthly Volume</label>
+                            <input type="text" id="volume" name="volume" placeholder="e.g. 500 MT, 1200 heads, 80 containers">
+                        </div>
+                        
+                        <!-- Desired Markets -->
+                        <div class="form-group">
+                            <label for="markets">Target Markets</label>
+                            <input type="text" id="markets" name="markets" placeholder="UAE, Saudi Arabia, Kenya, Europe...">
+                        </div>
+                    </div>
+                    
+                    <!-- Membership Interest -->
+                    <fieldset>
+                        <legend>Membership Interest</legend>
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" name="membership" value="basic" checked> Basic (Free)
+                            </label>
+                            <label>
+                                <input type="checkbox" name="membership" value="premium"> Premium ($49/mo)
+                            </label>
+                            <label>
+                                <input type="checkbox" name="membership" value="enterprise"> Enterprise ($179/mo)
+                            </label>
+                        </div>
+                    </fieldset>
+                    
+                    <!-- Connection Type -->
+                    <div class="form-group">
+                        <label for="connectionType">Connection Type *</label>
+                        <select id="connectionType" name="connectionType" required>
+                            <option value="">What are you looking for?</option>
+                            <option value="sell">Sell my products</option>
+                            <option value="buy">Find reliable suppliers</option>
+                            <option value="partnership">Strategic partnership</option>
+                            <option value="export">Export facilitation</option>
+                            <option value="import">Import / sourcing</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Additional Details -->
+                    <div class="form-group full">
+                        <label for="message">Additional Details or Specific Request</label>
+                        <textarea id="message" name="message" placeholder="Tell us more about your needs, timeline, or any specific requirements..." rows="4"></textarea>
+                    </div>
+                    
+                    <!-- Account Password (simulated) -->
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="password">Create a Password (for SBA account) *</label>
+                            <input type="password" id="password" name="password" minlength="8" required placeholder="Minimum 8 characters">
+                            <small style="color: var(--text-light); font-size: 0.8rem;">Used only for your SBA profile access</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password *</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" minlength="8" required placeholder="Confirm password">
+                        </div>
+                    </div>
+                    
+                    <!-- Terms -->
+                    <div class="form-group full">
+                        <label style="display: flex; align-items: flex-start; gap: 0.5rem; font-weight: 400;">
+                            <input type="checkbox" id="terms" name="terms" required style="margin-top: 4px;">
+                            <span>I agree to the <a href="#" style="text-decoration: underline;">Terms of Service</a> and <a href="#" style="text-decoration: underline;">Privacy Policy</a> of SBA.</span>
+                        </label>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-accent" style="padding: 0.95rem 3rem; font-size: 1.05rem;">Submit Inquiry &amp; Join SBA</button>
+                        <button type="reset" class="btn btn-outline">Clear Form</button>
+                    </div>
+                    
+                    <p style="margin-top: 1.25rem; font-size: 0.85rem; color: var(--text-light); text-align: center;">
+                        Your information is kept confidential and only shared with matched partners after your approval.
+                    </p>
+                </form>
+            </div>
+            
+            <!-- Success message (hidden initially) -->
+            <div id="successMessage" style="display: none; max-width: 720px; margin: 2rem auto; background: #D1FAE5; border: 1px solid #10B981; padding: 2rem; border-radius: 12px; text-align: center;">
+                <h3 style="color: #065F46; margin-bottom: 0.5rem;">✅ Thank you!</h3>
+                <p style="margin-bottom: 0.75rem; color: #065F46;">Your submission has been received. An SBA representative will contact you within 48 hours.</p>
+                <a href="index.html" class="btn btn-primary">Return to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Benefits -->
+    <section class="section" style="background-color: #F8F9FA;">
+        <div class="container">
+            <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+                <h3>Why submit an inquiry?</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+                    <div>
+                        <p style="font-weight: 600;">Instant Matching</p>
+                        <p style="font-size: 0.9rem;">Get matched with 3–5 verified partners immediately</p>
+                    </div>
+                    <div>
+                        <p style="font-weight: 600;">Verified Partners</p>
+                        <p style="font-size: 0.9rem;">All parties are screened by our team</p>
+                    </div>
+                    <div>
+                        <p style="font-weight: 600;">Free to Start</p>
+                        <p style="font-size: 0.9rem;">Basic membership is completely free</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo" style="margin-bottom: 1rem; color: white;">
+                        <img src="images/logo.png" alt="SBA Logo" width="40" height="40" style="filter: brightness(1) invert(0);">
+                        <span style="color: white;">SBA</span>
+                    </div>
+                    <p style="font-size: 0.95rem; max-width: 260px;">Empowering Somali trade since 2023. A trusted bridge between local producers and global markets.</p>
+                </div>
+                
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="gallery.html">Marketplace</a></li>
+                        <li><a href="connect.html">Join the Alliance</a></li>
+                        <li><a href="about.html">Our Story</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4>Contact Us</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:info@sballiance.so">info@sballiance.so</a></li>
+                        <li><a href="tel:+252615123456">+252 61 512 3456</a></li>
+                        <li>Mogadishu, Somalia</li>
+                        <li>Banaadir Trade Port Office</li>
+                    </ul>
+                    
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2026 Somali Business Alliance. All rights reserved. | A project by Jamhuriya University of Science &amp; Technology
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile nav
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileBtn.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+        });
+        
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileBtn.textContent = '☰';
+            });
+        });
+        
+        // Form handling
+        const form = document.getElementById('connectForm');
+        const successMsg = document.getElementById('successMessage');
+        
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Basic client-side password confirmation check
+            const password = document.getElementById('password').value;
+            const confirm = document.getElementById('confirmPassword').value;
+            
+            if (password !== confirm) {
+                alert('Passwords do not match. Please try again.');
+                return;
+            }
+            
+            // Hide form and show success
+            form.style.display = 'none';
+            successMsg.style.display = 'block';
+            
+            // Optional: scroll to top of success
+            successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // In a real project, this would submit to a backend
+            // For this academic project, form is fully styled and validated
+        });
+        
+        // Live password strength hint (bonus UX)
+        const passwordInput = document.getElementById('password');
+        passwordInput.addEventListener('input', function() {
+            if (this.value.length > 0 && this.value.length < 8) {
+                this.style.borderColor = '#F59E0B';
+            } else if (this.value.length >= 8) {
+                this.style.borderColor = '#10B981';
+            }
+        });
+    </script>
+</body>
+</html>
